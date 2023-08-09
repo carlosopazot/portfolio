@@ -1,0 +1,17 @@
+.navbar {
+  background-color: white;
+}
+
+.navbar-toggler {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    &.active {
+      font-weight: bold;
+    }
+  }
+}

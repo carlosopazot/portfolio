@@ -1,2 +1,41 @@
-.title {
-  color: #000; }
+body {
+  font-family: "Inter", sans-serif; }
+
+.navbar {
+  background-color: white; }
+
+.navbar-toggler:focus {
+  box-shadow: none; }
+
+.navbar-nav .nav-link.active {
+  font-weight: bold; }
+
+.hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero-title {
+    font-size: 4rem; }
+  .hero-subtitle {
+    font-size: 2rem; }
+  .hero-content {
+    color: gray; }
+
+.header-subtitle {
+  color: gray; }
+
+.card.card-portfolio {
+  margin-bottom: 2rem;
+  transition: .2s ease-in-out; }
+  .card.card-portfolio:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); }
+  .card.card-portfolio .card-text {
+    color: gray; }
+
+.footer {
+  width: 100%; }
+  .footer.footer-absolute {
+    position: absolute;
+    bottom: 0; }

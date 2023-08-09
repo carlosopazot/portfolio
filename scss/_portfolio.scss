@@ -1,0 +1,18 @@
+.header {
+  &-subtitle {
+    color: gray;
+  }
+}
+
+.card {
+  &.card-portfolio {
+    margin-bottom: 2rem;
+    transition: .2s ease-in-out;
+    &:hover {
+      box-shadow: 0 1rem 3rem rgba(black, .175);
+    }
+    .card-text {
+      color: gray;
+    }
+  }
+}
