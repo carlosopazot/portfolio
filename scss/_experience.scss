@@ -1,0 +1,18 @@
+.card {
+  &.card-experience {
+    transition: .2s ease-in-out;
+    &:hover {
+      box-shadow: 0 1rem 3rem rgba(black, .175);
+    }
+    .card-experience-title {
+      font-size: 1.65rem;
+      font-weight: medium;
+    }
+    .card-experience-date {
+      color: rgba(gray, 1);
+    }
+    .card-experience-description {
+      color: rgba(gray, 0.8);
+    }
+  }
+}

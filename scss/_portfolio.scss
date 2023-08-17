@@ -10,6 +10,7 @@
     transition: .2s ease-in-out;
     &:hover {
       box-shadow: 0 1rem 3rem rgba(black, .175);
+      transform: scale(1.05);
     }
     .card-text {
       color: gray;

@@ -30,7 +30,8 @@ body {
   margin-bottom: 2rem;
   transition: .2s ease-in-out; }
   .card.card-portfolio:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); }
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    transform: scale(1.05); }
   .card.card-portfolio .card-text {
     color: gray; }
 
@@ -55,3 +56,15 @@ body {
 .contact-form .form-label {
   font-size: 0.85rem;
   font-weight: bold; }
+
+.card.card-experience {
+  transition: .2s ease-in-out; }
+  .card.card-experience:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); }
+  .card.card-experience .card-experience-title {
+    font-size: 1.65rem;
+    font-weight: medium; }
+  .card.card-experience .card-experience-date {
+    color: gray; }
+  .card.card-experience .card-experience-description {
+    color: rgba(128, 128, 128, 0.8); }
