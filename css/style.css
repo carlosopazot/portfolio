@@ -11,10 +11,8 @@ body {
   font-weight: bold; }
 
 .hero {
-  height: 100%;
+  height: 600px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center; }
   .hero-title {
     font-size: 4rem; }
