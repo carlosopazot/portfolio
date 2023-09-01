@@ -57,7 +57,9 @@ body {
     color: gray; }
 
 .footer {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: 1000; }
 
 .button-social {
   width: 48px;
