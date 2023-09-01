@@ -57,22 +57,34 @@
       <div class="col-md-8 col-lg-6" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
         <div class="card">
           <div class="card-body p-5">
-            <form class="contact-form">
+            <form class="contact-form needs-validation" novalidate>
               <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                <div class="invalid-feedback">
+                  Debes ingresar un nombre
+                </div>
               </div>
               <div class="mb-3">
                 <label for="lastName" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Ingresa tu apellido">
+                <input type="text" class="form-control" id="lastName" placeholder="Ingresa tu apellido" required>
+                <div class="invalid-feedback">
+                  Debes ingresar un apellido
+                </div>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                <div class="invalid-feedback">
+                  Debes ingresar un correo válido
+                </div>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+                <div class="invalid-feedback">
+                  Debes ingresar un mensaje
+                </div>
               </div>
               <div class="d-grid">
                 <button class="btn btn-dark" type="submit">Enviar</button>
@@ -98,6 +110,24 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    (() => {
+    'use strict'
+
+    const forms = document.querySelectorAll('.needs-validation')
+
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
   </script>
 </body>
 </html>
