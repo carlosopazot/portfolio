@@ -1,1 +1,13 @@
 $font-family: 'DM Sans', sans-serif;
+$orange: #fad080;
+$blue: #71b8f3ee;
+$green: #60db7c;
+$red: #f88695;
+$gray: #adadad;
+
+$colors: (
+  "orange" : $orange,
+  "green" : $green,
+  "red" : $red,
+  "blue" : $blue,
+) !default;

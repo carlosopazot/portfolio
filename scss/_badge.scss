@@ -1,0 +1,15 @@
+.badge-custom {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  color: black;
+  background-color: $gray;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+@each $color, $value in $colors {
+  .badge-custom-#{$color} {
+    background-color: #{$value};
+  }
+}

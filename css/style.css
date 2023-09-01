@@ -1,5 +1,9 @@
 body {
-  font-family: "DM Sans", sans-serif; }
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; }
 
 .navbar {
   background-color: white; }
@@ -11,15 +15,30 @@ body {
   font-weight: bold; }
 
 .hero {
-  height: 600px;
+  height: 720px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .hero-title {
     font-size: 4rem; }
   .hero-subtitle {
     font-size: 2rem; }
   .hero-content {
     color: gray; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+
+.icon-hero {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  animation: bounce 2s infinite; }
 
 .header-subtitle {
   color: gray; }
@@ -66,3 +85,24 @@ body {
     color: gray; }
   .card.card-experience .card-experience-description {
     color: rgba(128, 128, 128, 0.8); }
+
+.badge-custom {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  color: black;
+  background-color: #adadad;
+  display: inline-block;
+  margin-bottom: 0.25rem; }
+
+.badge-custom-orange {
+  background-color: #fad080; }
+
+.badge-custom-green {
+  background-color: #60db7c; }
+
+.badge-custom-red {
+  background-color: #f88695; }
+
+.badge-custom-blue {
+  background-color: #71b8f3ee; }
